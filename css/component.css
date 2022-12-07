@@ -1,0 +1,615 @@
+/* ========================================= 
+
+Theme Name: KANPANI GIRLS
+Author: GIANTY 
+Description: Version: 1.0 
+
+========================================= 
+This files table contents are outlined below 
+============================ 
+Table of Content 
+============================ 
+- Typography 
+- Title 
+- Button 
+- Form 
+- Checkbox & Radio Button 
+
+- Header  
+- Footer
+
+- Button Back Top 
+
+/* ================ Font ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;900&display=swap');
+/* ================ Default CSS ================= */
+
+html * {
+  outline: 0 !important;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ===== Typography ===== */
+
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+}
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  
+}
+h4 {
+  font-size: 24px;
+  line-height: 34px;
+}
+h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 300;
+  color: #999;
+}
+.title {
+  margin-bottom:2rem;
+}
+.title h4 {
+  color: #E3001B;
+  font-size: 16px;
+} 
+.title h1 {
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* ===== Button ===== */
+/*
+.btn {
+  position: relative;
+  width: 160px;
+  height: 48px;
+  line-height: 48px;
+  padding:0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}*/
+
+.btn:focus,.btn:hover,.btn.active {
+  box-shadow: none;
+  outline: medium none;
+}
+
+.btn.active:focus, .btn:active:focus {
+  box-shadow: none !important;
+}
+
+
+
+
+
+/* ===== Form ===== */
+
+.form-group label {
+  font-weight: bold;
+}
+input.form-control {
+  border-radius: 4px;
+  height: 50px;
+  position: relative;
+  border: 0;
+  border-bottom: 2px solid #a7a7a7;
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 0px;
+  border-radius: 0px;
+}
+.form-control:focus {
+  color: #495057;
+  border-color: #412c2e;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+textarea.form-control {
+  border: 2px solid #adadad;
+  border-radius: 0px;
+}
+input.form-control::placeholder {
+  color: #000;
+  font-weight: 400;
+}
+input.form-control.date::placeholder {
+  color: #a5a5a5;
+}
+/* ===== Checkbox & Radio Button ===== */
+
+.check-box {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background-color: #eee;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+.check-box input:checked~.checkmark {
+  background-color: #1c428b;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.check-box input:checked~.checkmark:after {
+  display: block;
+}
+.check-box .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.custom-control-input:focus {
+  box-shadow: none !important;
+}
+.custom-select:focus {
+  box-shadow: none !important;
+}
+.custom-control-label::before {
+  box-shadow: none !important;
+}
+/*===== Radio Button ======*/
+
+.group-radio {
+  
+  margin-bottom: 18px;
+}
+.rdio {
+  position: relative;
+}
+.rdio input[type="radio"] {
+  opacity: 0;
+}
+.rdio label {
+  cursor: pointer;
+}
+.rdio label:before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  content: '';
+  display: inline-block;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 2px solid #dee2e6;
+  background: #fff;
+}
+.rdio input[type="radio"] {
+  margin: 0px;
+}
+.rdio input[type="radio"]:disabled + label {
+  color: #999;
+}
+.rdio input[type="radio"]:disabled + label:before {
+  background-color: #412c2e;
+}
+.rdio input[type="radio"]:checked + label::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  display: inline-block;
+  font-size: 11px;
+  width: 10px;
+  height: 10px;
+  background-color: #412c2e;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+/* ===== Button Back Top ===== */
+
+.back-top a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 2px solid #00e6f9;
+  background-color: #00e6f9;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 24px;
+  z-index: 100;
+  color: #fff;
+  top: -36px;
+  opacity: 0;
+  transition: all 0.9s linear 0s;
+}
+.back-top a::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 40px;
+  height: 40px;
+  animation: ripple 1.6s ease-out infinite;
+  opacity: 1;
+  background-color: #06a4a7;
+}
+@-webkit-keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.back-top {
+  position: relative;
+  top: 0;
+  display: block;
+}
+.back-top.active a {
+  opacity: 1;
+  top: 90%;
+}
+.back-top a:hover {
+  background-color: #00d9f6;
+  border: 2px solid #00d9f6;
+  color: #fff;
+}
+/*===== Preloader =====*/
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #dc3545 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #cccccc;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #e3001b;
+
+  }
+
+/*================= cursor ===================*/
+
+
+
+
+
+
+/*============================ 
+Header
+============================ */
+
+.languages__button {
+  background-color: #000;
+  padding: 8px 18px;
+  margin-top: 10px;
+}
+
+.languages__option span {
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.languages__option span:nth-child(3) {
+      color: #cccccc96;
+      transition: all 0.4s;
+  
+}
+.languages__option span:nth-child(3):hover {
+      color: #ffffff;
+      cursor:pointer;
+     
+}
+
+
+
+
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    transition: all 0.4s;
+   
+}
+.bg-header {
+  background-color:#fff0;
+}
+
+.base-header {
+  margin:0px 40px;
+}
+
+.block-languages {
+  line-height:40px;
+}
+.block-lang {
+  display:inline-block;
+  line-height:40px;
+  margin-right: 40px;
+}
+.list-items-flag-lang {
+  display:inline-block;
+}
+
+.item-flag-usa span {position: relative;top: 1px;margin-left: 6px;}
+
+.header.header-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+ 
+  background-color: #fff !important;
+  transition: all 0.6s ease;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+
+}
+
+.logo-brand a {
+  display: inline-block;
+}
+
+
+.hide-menu {
+    top: -120px !important;
+}
+ul.navbar-nav.nav-screen-lg .nav-link {
+  display: inline-block;
+  padding: 18px 12px;
+  text-transform: uppercase;
+  color: #89919a;
+  font-weight: 300;
+}
+
+ul.navbar-nav.nav-screen-lg .nav-item {padding-left: 18px;}
+
+nav.navbar.navbar-expand-lg {
+  margin: 0px;
+  padding: 0;
+}
+
+ul.navbar-nav li a.nav-link:before {
+  position: absolute;
+  height: 2px;
+  content: '';
+  transition: all 0.4s ease;
+  background: #ccc;
+  bottom: 5px;
+  width: 0;
+}
+
+ul.navbar-nav li.nav-item.btn-search a.nav-link:before {
+  background: transparent;
+}
+.navbar ul.navbar-nav li:hover a.nav-link:before {
+  color: #ffffff;
+  width: 50px;
+  transition: all 0.4s ease;
+}
+
+
+.block-menu-mobile {
+  display: none;
+}
+
+.close-mobile {
+  display: none;
+}
+.menu-mobile {
+  display: none;
+}
+
+a.nav-link.active {
+  color: #111315 !important;
+}
+
+
+
+/*============================ Footer ============================*/
+.footer {
+  background-color: #fff;
+  padding-top: 6rem;
+  border-bottom: 6px solid #FF2D2D;
+}
+
+
+.top-footer__logo {
+  padding:0rem 3rem;
+  margin-top: 5rem;
+}
+
+.top-footer__logo p:nth-child(2) {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  color: #000;
+  font-weight: 400;
+}
+
+.base-top-footer__info {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-image-slice: 1;
+  border-image-source: linear-gradient( #ffffff,#00000069,#000,#000000,#fff);
+  padding: 5rem 2rem;
+}
+.top-footer__info h4 {
+font-size:  1.125rem;
+font-weight:bold;
+}
+
+
+
+.top-footer__info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.top-footer__info ul li {
+  padding:0.625rem 0rem;
+}
+.top-footer__info ul li a {
+  text-decoration:none;
+  color:#000;
+}
+
+
+
+
+.top-footer__add-offcie--bg-image {
+   /* mix-blend-mode: luminosity; */
+   background: url(../images/bg-offcie.png);
+   min-height: 590px;
+   padding-top: 1rem;
+   background-position: -160px 116px;
+   position: relative;
+   background-size: cover;
+   background-repeat: no-repeat;
+   width: 100%;
+   overflow: hidden;
+}
+
+.block-info-address-footer {
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+}
+.info-address-footer p {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+
+.title-address-footer h5 {
+  margin-bottom:1rem;
+  font-size: 14px;
+  color:#f1071d;
+}
+
+.img-info-add {
+   mix-blend-mode: luminosity;
+     animation: ball-animate 15s infinite;
+}
+
+/*@keyframes ball-animate {
+    5% {
+      transform: translateY(-10px);  
+    }
+
+   
+
+    50% {
+     
+        transform: translateY(20px);
+    }
+
+    100% {
+      
+    }
+}*/
+
+/*===================================================================
+Other Pages
+================================================================== */
+
+
+
+
+
+
+
