@@ -75,7 +75,7 @@ Other Pages
 }
 
 .image-with-effects:hover .image-wrapper {
-  transform: scale(0.7);
+  transform: scale(0.9);
 }
 .image-with-effects .image-wrapper {
   position: relative;
@@ -83,7 +83,7 @@ Other Pages
   transition-duration: 0.8s;
   -webkit-transition-property: transform;
   transition-property: transform;
-  min-width: 1000px;
+  min-width: 100%;
   text-align: center;
 }
 .image-with-effects .image-wrapper::before {
@@ -104,9 +104,11 @@ Other Pages
   animation: shine 6s linear infinite;
 }
 .image-with-effects .image-wrapper img {
-  width: 55%;
-  height: auto;
+  width: 650px;
+  /* height: auto; */
   opacity: 1;
+  margin: auto;
+  left: -6%;
 }
 @keyframes shine {
   0% {
@@ -148,6 +150,12 @@ Other Pages
   mix-blend-mode: normal;
 }
 
+.img-coming-soon {
+ width: 800px;
+}
+
+
+
 @-webkit-keyframes animation-coming {
   0% {
     transform: translateY(100px);
@@ -187,6 +195,7 @@ Other Pages
 .item-clock h4 {
   font-weight: 400;
   font-family: 'Playfair Display', serif;
+  line-height: 25px;
 }
 
 .cloud-1 {
@@ -240,12 +249,12 @@ Other Pages
 #clockdiv {
   position: absolute;
   bottom: 30px;
-  left: -6%;
+  left: -10%;
   right: 0;
   z-index: 1000;
   display: inline-flex;
   justify-content: center;
-  width: 550px;
+  width: 500px;
   margin: auto;
   text-align: center;
   background: rgba(255, 255, 255, 0.4);
@@ -256,7 +265,8 @@ Other Pages
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #e5a2d347, inset -20px 0 80px #00ffff17, inset 20px 0 300px #f9b0d296, inset -20px 0 300px #00ffff1c, 0 0 50px #fff, -10px 0 80px #ebaaeb42, 10px 0 80px #00ffff26;
 }
 #clockdiv .item-clock {
-  padding: 14px 20px;
+  padding: 6px 18px;
+  padding-bottom: 24px;
 }
 .item-clock span {
   font-size: 56px;
@@ -604,7 +614,7 @@ background: linear-gradient(to right, #7d1f1a, #2C3E50); /* W3C, IE 10+/ Edge, F
    -moz-filter: blur(5vw);
    -ms-filter: blur(5vw);
    filter: blur(5vw);
-   background: linear-gradient(270deg, #842029, #d60000);
+   background: linear-gradient(270deg, #ffca2b, #f9fafb);
    background-size: 200% 200%;
    animation: animateGlow 3s ease infinite;
 }
@@ -695,12 +705,12 @@ background: linear-gradient(to right, #7d1f1a, #2C3E50); /* W3C, IE 10+/ Edge, F
   animation: animate 0.5s linear infinite;
   color: #ffffff;
   font-family: 'Playfair Display', serif;
-  font-size: 8.5rem;
+  font-size: 6.7rem;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
   z-index: -1;
-  top: 74px;
+  top: 61px;
 }
 
 @keyframes animate {
