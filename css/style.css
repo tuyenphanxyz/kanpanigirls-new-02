@@ -152,6 +152,7 @@ Other Pages
 
 .img-coming-soon {
  width: 800px;
+ mix-blend-mode: hard-light;
 }
 
 
