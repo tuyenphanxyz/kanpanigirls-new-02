@@ -449,3 +449,22 @@ left:0;
 } 
 }
 
+
+
+/* ================= SCREEN OTHER =================== */
+
+@media only screen and (min-width: 1280px) and (max-width: 1300px) {
+	* {}
+	.img-coming-soon {
+    width: 780px;
+    mix-blend-mode: hard-light;
+}
+
+.block-button-tw {
+    position: absolute;
+    z-index: 9999;
+    right: 65px;
+}
+
+	
+}
