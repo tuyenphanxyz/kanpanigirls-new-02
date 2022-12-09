@@ -2,6 +2,22 @@
 
 @media only screen and (max-width: 667px) and (min-width: 0px) {
 	* {}
+
+.button-choose-language a {
+	padding: 0px 1px;
+}
+
+	
+.button-choose-language {
+    display: block;
+    background: #44b3e7;
+    position: relative;
+    top: -40px;
+    width: 140px;
+    left: 10px;
+    z-index: 99999;
+}
+	
 .overlay-black-right {
 	display:none;
 }
@@ -25,7 +41,7 @@
     position: absolute;
     width: 50%;
     height: 35%;
-    z-index: 9999;
+    left: 0;
 }
 	
 
@@ -68,7 +84,7 @@ background: linear-gradient(to top, #f05053, #e1eec3);
 .block-button-tw {
     position: absolute;
     right: 1px;
-    bottom: -25px;
+    bottom: 31px;
     text-align: center;
     z-index: 99999;
 }
@@ -109,12 +125,14 @@ left:0;
 
 .coming-soon {
 	width: 100%;
-	bottom: 130px;
+	bottom: 0px;
 	left: 0;
 }
 .img-coming-soon {
 	padding: 16px;
 	padding-top: 0px;
+	position: relative;
+	top: 3px;
 }
 
 	
@@ -170,14 +188,16 @@ left:0;
 .header__center {
 	display: none;
 }
-.text-slide {position: absolute;left: 0;z-index: 999;bottom: 190px;animation: text-titlekan 2s cubic-bezier(0.38, 0.28, 0.58, 0.7) forwards;animation-fill-mode: forwards;}
+.text-slide {position: absolute;left: 0;z-index: 999;bottom: 55px;animation: text-titlekan 2s cubic-bezier(0.38, 0.28, 0.58, 0.7) forwards;animation-fill-mode: forwards;}
 
 .title-for-phone {
   display: block;
 }
 .image-with-effects .image-wrapper img {
-    width: 80%;
+    width: 210px;
     margin: auto;
+    left: -70px;
+    z-index: -1;
 }
 
 	
