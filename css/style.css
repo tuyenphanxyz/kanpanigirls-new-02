@@ -104,7 +104,7 @@ Other Pages
   animation: shine 6s linear infinite;
 }
 .image-with-effects .image-wrapper img {
-  width: 500px;
+  width: 760px;
   /* height: auto; */
   opacity: 1;
   margin: auto;
@@ -152,7 +152,7 @@ Other Pages
 }
 
 .img-coming-soon {
- width: 600px;
+ width: 860px;
  mix-blend-mode: hard-light;
 }
 
@@ -174,9 +174,11 @@ Other Pages
 
 .block-button-tw {
   position:absolute;
-  right: 200px;
+  z-index: 9999;
+  right: 95px;
   bottom:0;
   text-align: center;
+  transform: scale(0);
   animation: gr-button-social 3s cubic-bezier(0.38, 0.28, 0.58, 0.7) forwards;
   animation-fill-mode: forwards;
   animation-delay: 3s;
@@ -305,6 +307,11 @@ Other Pages
   top: -34px;
   z-index: 9;
 }
+.button-tw-below a img {
+ width: 220px;
+}
+
+
 .button-tw-below a:hover {
   box-shadow: inset 0 0 50px #0dcaf0, inset 20px 0 80px #6fa5f5, inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
 }
@@ -323,7 +330,7 @@ Other Pages
 
 
 .img-tw img {
- padding: 16px 24px;
+ padding: 8px 20px;
  position: relative;
  z-index: 1;
  box-shadow: 0 0 0 1px rgba(0, 0, 0, .01);
@@ -337,8 +344,8 @@ Other Pages
    z-index: 0;
    border-radius: 50%;
    height: 100%;
-   width: 100%;
-   transform: scale(0.9) translateZ(0);
+   width: 95%;
+   transform: scale(0.8) translateZ(0);
    filter: blur(19px);
    background: linear-gradient(to left, #fff257, #ffc107, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
    background-size: 200% 200%;
@@ -353,6 +360,41 @@ Other Pages
   }
 }
 
+.button-tw-below {
+ display: block;
+ position: relative;
+}
+.button-choose-language {
+ display: block;
+ background: #44b3e7;
+ position: relative;
+ top: -40px;
+ width: 220px;
+ left: 10px;
+}
+.button-choose-language a {
+ display: inline-block;
+ font-family: 'Playfair Display', serif;
+ text-transform: uppercase;
+ padding: 5px 7px;
+ text-decoration: none;
+ color: #ffffff;
+ font-size: 18px;
+ transition: all 0.4s;
+}
+
+.button-choose-language a.japanese-option
+{
+ color: #a1e1ff;
+}
+.button-choose-language a.japanese-option:hover
+{
+ color: #ffffff;
+}
+.button-choose-language a.english-option:hover
+{
+  color: #e0e9ee;
+}
 .sakura {
   /* position: absolute; */
   overflow: hidden;
